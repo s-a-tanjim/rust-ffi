@@ -1,0 +1,14 @@
+This is a sample project for testing UNIFFI.
+
+1. First you need to build the rust library.
+
+    $ cd lib/math/
+    $ cargo build
+
+2. Then you can compile the Kotlin project with gradle.
+
+    $ ./gradle build
+
+3. To run the kotlin project, provide the location of the rust library.
+
+    $ LD_LIBRARY_PATH=./lib/math/target/debug/ ./gradlew run
