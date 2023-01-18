@@ -1,0 +1,3 @@
+This is a collection of sample projects testing various FFI wrappers for Rust.
+The projects are separated by folders.  Each folder has a dedicated readme with
+directions.
