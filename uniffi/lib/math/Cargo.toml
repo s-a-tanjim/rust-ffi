@@ -1,0 +1,17 @@
+[package]
+name = "math"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uniffi = "0.22.0"
+uniffi_macros = "0.22.0"
+
+[build-dependencies]
+uniffi_build = "0.22.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "math"
