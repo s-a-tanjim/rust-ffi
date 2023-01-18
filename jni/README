@@ -1,0 +1,18 @@
+This is a sample project for testing JNI.
+
+1. First you need to build the rust library.
+
+    $ cd libs/
+    $ cargo build
+
+2. Then you can compile either Kotlin or Java bytecodes.
+
+  a. Kotlin:
+
+    $ kotlinc src/Main.kt -d out
+    $ kotlin -cp out/ -Djava.library.path=./libs/target/debug MainKt
+
+  b. Java
+
+    $ javac src/Main.java -d out
+    $ java -cp out/ -Djava.library.path=./libs/target/debug Main
