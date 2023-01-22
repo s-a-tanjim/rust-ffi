@@ -7,7 +7,7 @@ This is a sample project for testing UNIFFI.
 
 2. Then you can compile the Kotlin project with gradle.
 
-    $ ./gradle build
+    $ ./gradlew build
 
 3. To run the kotlin project, provide the location of the rust library.
 
